@@ -12,8 +12,29 @@ import { RouterLink, RouterLinkWithHref } from '@angular/router';
 })
 
 export class HomePage {
-  title = 'Tour of Heroes';
-  myHero = 'Windstorm';
-  heroes =  ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+  
+  public alertButtons = ['Recuperar'] ;
+  
+  public alertInputs = [
+    {
+      placeholder: 'Nombre',
+    },
+    {
+      placeholder: 'Contraseña (max 8 characters)',
+      attributes: {
+        maxlength: 8,
+      },
+    },
+    {
+      placeholder: 'Repetir Contraseña (max 8 characters)',
+      attributes: {
+        maxlength: 8,
+      },
+      
+      
+    },
+    
+
+  ];
   constructor() {}
 }
